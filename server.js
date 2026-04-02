@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://shreyanshkr7206:<db_password>@account.6qekycy.mongodb.net/?appName=Account");
+mongoose.connect(process.env.mongodb+srv://shreyanshkr7206:<db_password>@account.6qekycy.mongodb.net/?appName=Account);
 
 const userSchema = new mongoose.Schema({
   name: String,
